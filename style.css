@@ -1,0 +1,444 @@
+/*--------------
+    animation
+---------------*/
+
+@keyframes right-ball {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -3%;
+    }
+}
+
+@keyframes laft-ball {
+    0% {
+        left: -3%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.right-ball {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    animation: right-ball 3000ms ease-in-out 0.5s alternate infinite;
+    animation-play-state: running;
+}
+
+.laft-ball {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    animation: laft-ball 3000ms ease-in-out 0.5s alternate infinite;
+    animation-play-state: running;
+}
+
+/*----------
+   banner
+----------*/
+
+.banner-section {
+    background-color: #740624;
+    border-radius: 20px;
+    margin: 5px 100px;
+}
+
+.top-view {
+    display: flex;
+}
+
+.banner-text {
+    color: white;
+    padding: 5%;
+    width: 50%;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+p {
+    font-size: 20px;
+}
+
+
+.t-ancor {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.t-ancor:hover {
+    font-size: 25px;
+    color: aqua;
+}
+
+.banner-img-div {
+    position: relative;
+    padding: 0% 5%;
+    width: 50%;
+
+}
+
+
+.banner-img {
+    position: absolute;
+    bottom: 0px;
+    height: 90%;
+
+}
+
+
+
+/*---------------
+   ANCOR DIVITION
+---------------*/
+.main-section {
+    display: flex;
+    margin: 40px 100px;
+}
+
+.all-ancors {
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 25%;
+    height: fit-content;
+    border-color: black;
+    border-style: solid;
+}
+
+.all-ancors:hover {
+    background-color: #740624;
+}
+
+.ancor-body {
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px 5px;
+}
+
+.ancor-body:hover {
+    background-color: lightgreen;
+}
+
+.ancor-body-selected {
+    background-color: aquamarine;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px 5px;
+}
+
+.ancor-text {
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.ancor-text:hover {
+    font-size: 45px;
+}
+
+
+/*---------------
+   All Blogs
+----------------*/
+
+.all-blogs {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    margin-left: 20px;
+}
+
+.all-blogs:hover {
+    width: 80%;
+}
+
+.blog {
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid rgba(71, 70, 70, 0.486);
+    border-radius: 15px;
+}
+
+.blog:hover {
+    background-image: linear-gradient(rgb(0, 255, 98), rgb(255, 255, 255));
+
+}
+
+.blogs-ancor {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: black;
+    font-size: 20px;
+    margin-left: 5px;
+    border: 1px solid rgba(49, 49, 49, 0.685);
+    border-radius: 5px;
+}
+
+.blogs-ancor:hover {
+    font-size: 25px;
+}
+
+.thumbnail {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+/* 
+.blog-info {} */
+
+.blog-title {
+    font-size: 30px;
+    padding: 0px 5px;
+}
+
+.blog-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 80px);
+    padding-left: 5px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+/*-------------------
+   FOOTER SECTION
+-------------------*/
+
+footer {
+    background-color: #740624;
+
+}
+
+.footer-div {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fot-text {
+    font-size: 50px;
+
+}
+
+.fot-icons {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.icon {
+    width: 40px;
+    margin-left: 10px;
+    margin-left: 20px;
+    color: rgb(255, 255, 255);
+}
+
+
+.fot-hr {
+    height: 1px;
+    margin: 10px 250px;
+    background-color: white;
+    border: none;
+}
+
+.impr-ancor {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.last-ancors {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+
+/*-----------------
+   Media Queries
+-----------------*/
+
+/* Mobile Divices */
+@media only screen and (max-width: 688px) {
+    /*--------------------
+        banner-section
+    --------------------*/
+
+    .banner-section {
+        background-color: #740624;
+        width: 80%;
+        margin: 5px 35px;
+    }
+
+    .top-view {
+        display: inline;
+    }
+
+    .banner-text {
+        color: white;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .banner-img-div {
+        position: absolute;
+        width: 100%;
+
+    }
+
+    /*    -----------------
+    MAIN SECTION
+---------------------*/
+
+    .main-section {
+        display: inline;
+    }
+
+    .all-ancors {
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        width: 80%;
+        border: none;
+        margin-left: 12px;
+    }
+
+    .all-ancors:hover {
+        background-color: white;
+    }
+
+    .ancor-body {
+        background-color: white;
+        border-radius: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .ancor-body:hover {
+        background-color: white;
+    }
+
+    .ancor-body-selected {
+        background-color: #740624;
+        border-radius: 15px;
+        padding: 5px;
+        margin: 10px 5px;
+    }
+
+    .ancor-text {
+        font-size: 30px;
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .ancor-text:hover {
+        font-size: 40px;
+    }
+
+    /*--------------------
+    All Blogs
+--------------------*/
+
+    .all-blogs {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+        margin: 5px 35px;
+    }
+
+    .thumbnail {
+        margin-bottom: 5%;
+    }
+
+    .blogs-ancor {
+        text-align: center;
+        margin-left: 35%;
+        font-size: 18px;
+    }
+
+    .blog-title {
+        text-align: center;
+        font-size: 25px;
+        margin-top: 8px;
+    }
+
+    /*-------------------
+   FOOTER SECTION
+-------------------*/
+
+    .footer-div {
+        color: white;
+        display: inline;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fot-text {
+        font-size: 25px;
+        text-align: center;
+        padding-top: 5px;
+        margin-bottom: 5px;
+
+    }
+
+    .fot-icons {
+        display: flex;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 10px;
+        justify-content: center;
+    }
+
+    .icon {
+        width: 18px;
+        margin-left: 10px;
+        color: rgb(255, 255, 255);
+    }
+
+    .fot-hr {
+        height: 1px;
+        margin: 10px 25px;
+        background-color: white;
+        border: none;
+    }
+
+    .last-ancors {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        margin-left: 30px;
+    }
+}
